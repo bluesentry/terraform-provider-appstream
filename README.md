@@ -10,10 +10,10 @@ $ terraform plan
 $ terraform apply
 ```
 
-#Development notes
+# Development notes
 This project references some underlying functions from [terraform-provider-aws](https://github.com/terraform-providers/terraform-provider-aws), which subsequently uses `Go Modules`
 
-#Authentication
+# Authentication
 AWS Authentication is supported via static credentials or via shared credentials file
 
 * Set static credentials
