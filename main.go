@@ -1,14 +1,11 @@
 package main
 
 import (
-        "github.com/hashicorp/terraform/plugin"
-        "github.com/hashicorp/terraform/terraform"
+	"github.com/bluesentry/terraform-provider-appstream/appstream"
+	"github.com/hashicorp/terraform-plugin-sdk/plugin"
 )
 
 func main() {
-        plugin.Serve(&plugin.ServeOpts{
-                ProviderFunc: func() terraform.ResourceProvider {
-                        return Provider()
-                },
-        })
+	plugin.Serve(&plugin.ServeOpts{
+		ProviderFunc: appstream.Provider})
 }
